@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-const PopularItem = ({ id, name, year, rating, rank, img }) => {
+const PopularItem = ({ id, name, year, rating, rank, png }) => {
   return (
     <div className="flex flex-row items-center pb-5 pt-5">
       <div className="flex-1 ">
         <Link to={`/movie/${id}`}>
-          <img src={img} alt="180*100" />
+          <img src={png} alt="180*100" />
         </Link>
       </div>
       <div className="flex-1 flex flex-col">
