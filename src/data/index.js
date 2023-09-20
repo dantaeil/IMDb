@@ -17,6 +17,12 @@ export const MovieData = [
     rank: 1,
     png: joker,
     jpg: Joker,
+    url: "https://www.w3schools.com/html/mov_bbb.mp4",
+    detail: {
+      tag: ["CRIME", "DRAMA", "THRILLER"],
+      description:
+        "A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain",
+    },
   },
   {
     id: "spiderman",
@@ -26,6 +32,12 @@ export const MovieData = [
     rank: 2,
     png: spiderman,
     jpg: Spiderman,
+    url: "https://www.w3schools.com/html/mov_bbb.mp4",
+    detail: {
+      tag: ["HERO", "JUSTICE", "THRILLER"],
+      description:
+        "Spider-Man: No Way Home is a highly anticipated superhero film that explores the multiverse and features the return of iconic characters from previous Spider-Man franchises.",
+    },
   },
   {
     id: "thor",
@@ -35,6 +47,12 @@ export const MovieData = [
     rank: 3,
     png: thor,
     jpg: Thor,
+    url: "https://www.w3schools.com/html/mov_bbb.mp4",
+    detail: {
+      tag: ["ACTION", "JOURNEY", "MARVEL"],
+      description:
+        "Thor: Ragnarok is an action-packed Marvel film that chronicles the epic journey of Thor as he confronts the destruction of his homeland and encounters new allies and foes along the way.",
+    },
   },
   {
     id: "panther",
@@ -44,5 +62,11 @@ export const MovieData = [
     rank: 4,
     png: panther,
     jpg: Panther,
+    url: "https://www.w3schools.com/html/mov_bbb.mp4",
+    detail: {
+      tag: ["HERO", "HISTORY", "JUSTICE"],
+      description:
+        "Black Panther is a groundbreaking superhero film that tells the story of T'Challa, the king of Wakanda, as he struggles with the responsibilities of the throne and fights to protect his people and their advanced technology.",
+    },
   },
 ];

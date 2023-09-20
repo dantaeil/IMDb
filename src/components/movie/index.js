@@ -12,8 +12,10 @@ const Movie = () => {
     return item.id === current;
   };
 
-  const { name, year, img } = MovieData.find(findMovie);
-  const trailerUrl = "https://www.w3schools.com/html/mov_bbb.mp4";
+  const { name, year, img, detail, url } = MovieData.find(findMovie);
+  const trailerUrl = url;
+
+  console.log(detail.tag);
 
   return (
     <>
@@ -43,19 +45,17 @@ const Movie = () => {
         </Video>
       </div>
       <div className="flex flex-row my-10 items-center space-x-6">
-        <div className="flex-initial py-1 px-4 border text-1xl font-semibold">
-          CRIME
-        </div>
-        <div className="flex-initial py-1 px-4 border text-1xl font-semibold">
-          DRAMA
-        </div>
-        <div className="flex-initial py-1 px-4 border text-1xl font-semibold">
-          THRILLER
-        </div>
-        <div className="flex-initial font-semibold">
-          A mentally troubled stand-up comedian embarks on a downward spiral
-          that leads to the creation of an iconic villain
-        </div>
+        {detail.tag.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className="flex-initial py-1 px-4 border text-1xl font-semibold"
+            >
+              {item}
+            </div>
+          );
+        })}
+        <div className="flex-initial font-semibold">{detail.description}</div>
       </div>
     </>
   );
