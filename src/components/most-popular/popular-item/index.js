@@ -1,12 +1,13 @@
 import { StarIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const PopularItem = () => {
   return (
     <div className="flex flex-row items-center pb-5 pt-5">
       <div className="flex-auto ">
-        <button>
+        <Link to="/movie/JOKER">
           <img src="https://placehold.co/180x100" alt="180*100" />
-        </button>
+        </Link>
       </div>
       <div className="flex-auto flex flex-col">
         <div className="text-3xl font-bold mb-5">JOKER</div>

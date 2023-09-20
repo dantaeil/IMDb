@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const Random = () => {
   return (
-    <div>
+    <>
       <button className="bg-sky-500 text-white py-1 px-3 mb-5 shadow-xl">
         PICK A RANDOM MOVIE
       </button>
@@ -10,12 +12,12 @@ const Random = () => {
           <span className="text-3xl">2019</span>
         </div>
         <div>
-          <button>
+          <Link to="/movie/JOKER">
             <img src="https://placehold.co/1300x500" alt="1300*500" />
-          </button>
+          </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

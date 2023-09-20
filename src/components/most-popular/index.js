@@ -1,4 +1,4 @@
-import PopularItem from "../../components/popular-item";
+import PopularItem from "./popular-item";
 const MostPopular = () => {
   return (
     <div className="divide-y divide-gray-400">

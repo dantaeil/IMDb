@@ -1,9 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import clsx from "clsx";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [focus, setFocus] = useState(1);
+  const location = useLocation();
+  let initialFocus = 0;
+  if (location.pathname === "/random") initialFocus = 1;
+  if (location.pathname === "/most-popular") initialFocus = 2;
+  const [focus, setFocus] = useState(initialFocus);
 
   return (
     <div>
