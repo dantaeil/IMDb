@@ -6,6 +6,7 @@ const Movie = () => {
         <span className="text-3xl">2019</span>
       </div>
       <div>
+        <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-gray-900"></div>
         <img src="https://placehold.co/1200x600" alt="1200*600" />
       </div>
       <div className="flex flex-row my-10 items-center space-x-6">

@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
 
-const PopularItem = () => {
+const PopularItem = ({ id, name, year, rating, rank, img }) => {
   return (
     <div className="flex flex-row items-center pb-5 pt-5">
-      <div className="flex-auto ">
-        <Link to="/movie/JOKER">
-          <img src="https://placehold.co/180x100" alt="180*100" />
+      <div className="flex-1 ">
+        <Link to={`/movie/${id}`}>
+          <img src={img} alt="180*100" />
         </Link>
       </div>
-      <div className="flex-auto flex flex-col">
-        <div className="text-3xl font-bold mb-5">JOKER</div>
-        <div className="text-3xl">2019</div>
+      <div className="flex-1 flex flex-col">
+        <div className="w-60">
+          <div className="text-3xl font-bold h-16">{name}</div>
+          <div className="text-3xl">{year}</div>
+        </div>
       </div>
-      <div className="flex-auto flex flex-col">
+      <div className="flex-1 flex flex-col">
         <div className="text-2xl ">IMDb RATING</div>
 
         <div className="flex flex-row items-center">
@@ -30,12 +32,12 @@ const PopularItem = () => {
               />
             </svg>
           </div>
-          <div className="text-3xl font-bold">10 / 10</div>
+          <div className="text-3xl font-bold">{rating} / 10</div>
         </div>
       </div>
-      <div className="flex-auto">
+      <div className="flex-1">
         <div className="text-2xl ">Rank</div>
-        <div className="text-3xl font-bold">1</div>
+        <div className="text-3xl font-bold">{rank}</div>
       </div>
     </div>
   );
